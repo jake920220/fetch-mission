@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+div#user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+div.card {
+  position: relative;
+  padding: 16px 24px;
+  width: 400px;
+  min-height: 160px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding-left: 166px;
+}
+
+img {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  border-radius: 100%;
+  border: 1px solid #c7c7c7;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  display: block;
+}
+
+div.card > :not(img) {
+  margin-top: 8px;
+}
