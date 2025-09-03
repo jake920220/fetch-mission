@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+#search {
+  margin: 50px;
+  padding: 10px 30px;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+}
+
+#search::placeholder {
+  text-align: center;
+}
+
+#search:focus::placeholder {
+  color: transparent;
+}
+
+#search:focus {
+  border: 1px solid silver;
+}
+
+#user-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3칸 */
+  gap: 20px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+  cursor: pointer;
+  gap: 20px;
+  transition: transform 0.1s ease;
+}
+
+.user-card:hover {
+  border: 1px solid silver;
+  transform: translateY(-5px);
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.user-card .text {
+  line-height: 1.5;
+}
+
+.user-card .name {
+  font-weight: 600;
+}
+
+.user-card .email {
+  color: #1e90ff;
+  white-space: nowrap;
+}
+
+.user-card .email:hover {
+  text-decoration: underline;
+}
+
+.user-card .phone {
+  color: #1e90ff;
+}
+
+.user-card .phone:hover {
+  text-decoration: underline;
+}
+
+.status {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: silver;
+  letter-spacing: 2px;
+}
