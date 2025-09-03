@@ -1,0 +1,37 @@
+h1{
+    text-align: center;    
+}
+
+#user-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #808080;
+    border-radius: 10px; 
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-card h2 {
+    margin: 15px 0 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.user-card p {
+    margin: 5px 0;
+    color: #777;
+}
