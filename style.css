@@ -1,0 +1,30 @@
+body{
+    font-family: 'pretendard';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#user-list{
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 20rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card > img {
+    border-radius: 50%;
+}
+.card > p {
+    color : #68AEFF
+}
